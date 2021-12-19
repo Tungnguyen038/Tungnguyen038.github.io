@@ -1,0 +1,30 @@
+/* --------------------------------mobile----------------------- */
+@media only screen and (max-width: 48em){
+    .product{
+        margin: 20px;
+    }
+    .product-top{
+        display: none;
+    }
+    .product-content{
+      flex-direction: column;
+    }
+    .product-content-left {
+        width: 100%;
+    }
+    .product-content-right{
+        padding: 20px 0;
+        width: 100%;
+    }
+    .product-content-left-big-img {
+        width: 80%;
+    }
+    .product-content-left-small-img {
+          width: 20%;
+    }
+    
+    .product-related {
+        display: none;
+    }
+
+}

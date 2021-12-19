@@ -1,0 +1,377 @@
+:root {
+    --main-color: #80b157;
+    --text-color: #666;
+    --white-color: #fff;
+    --black-color: #000;
+    --purple-color: #730058;
+    --brown-color: #564741;
+    --blue-color: #004977;
+    --grey-color: #dbdbdb;
+    --border-color: #bcbebf;
+    --text-color: #444;
+    --header-height: 64px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Poppins ,sans-serif;
+    box-sizing: border-box;
+    /* -webkit-tap-highlight-color: transparent; */
+}
+/* body {
+    margin: 0;
+} */
+body ::selection {
+    color: var(--white-color);
+    background-color: #00b2ca;
+    
+}
+
+#main {
+    overflow: hidden;
+}
+.border-bottom { color: #000;display:inline-block; margin:0;text-transform:uppercase; }
+.border-bottom:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #000;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.border-bottom:hover:after { transform: scaleX(1); }
+.border-bottom.fromRight:after{ transform-origin:100% 50%; }
+.border-bottom.fromLeft:after{  transform-origin:  0% 50%; }
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.2s ease;
+}
+
+.pd-5 {
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+
+.mg-5 {
+    margin-left: -5px !important;
+    margin-right: -5px !important;
+}
+
+.white-background {
+    background-color: var(--white-color);
+}
+
+.grey-background {
+    background-color: var(--grey-color);
+}
+
+.obj-animate {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 140px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    animation: obj-ani-1 45s infinite ease-out;
+}
+
+.obj-animate--green {
+    background-color: rgba(128,177,87,0.6);
+}
+
+.obj-animate--white {
+    top: 70px;
+    background-color: rgba(255,255,255,0.6);
+    animation: obj-ani-2 45s infinite ease-out;
+}
+
+@keyframes obj-ani-1 {
+    0% {
+        left: 10%;
+    }
+    
+    50% {
+        left: calc(90% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+@keyframes obj-ani-2 {
+    0% {
+        left: calc(90% - 60px);
+    }
+    
+    50% {
+        left: 10%;
+    }
+    100% {
+        left: calc(90% - 60px);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.overlay-style1::after {
+    content: '';
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+}
+
+.overlay-style1:hover::after {
+    opacity: 1;
+}
+
+.container_section {
+    position: relative;
+}
+
+.container_section-wrap {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_title {
+    display: inline-block;
+    font-size: 3rem;
+    line-height: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    padding: 15px 0;
+    margin: 5px 0 30px;
+    position: relative;
+}
+
+.container_title::after {
+    content: '';
+    height: 2px;
+    width: 80%;
+    background-color: #ccc;
+    position: absolute;
+    top: 100%;
+    left: 10%;
+}
+
+.container_description {
+    text-align: center;
+    font-size: 2.6rem;
+    letter-spacing: 2.4px;
+    color: #222;
+    line-height: 3.2rem;
+    padding-bottom: 40px;
+    font-family: 'Rochester', cursive;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(140px);
+    opacity: 0;
+    transition: all 1.2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* phan tim kiems */
+
+.mobile-layer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 5000;
+    transition: linear 0.5s;
+}
+
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+.menu-mobile {
+    font-size: 20px;
+    color: var(--white-color);
+    display: none;
+}
+
+.search-mobile {
+    font-size: 20px;
+    font-weight: 700;
+    display: none;
+}
+.mobile-s {
+
+    background-color: #fff;
+    position: absolute;
+    margin-top: 90px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px 10px 10px;
+    /* padding-top: 20px; */
+
+
+}
+.close-search-vip {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.close-search {
+    font-size: 30px;
+    color: #000;
+    font-weight: 350;
+}
+.input-search {
+    display: flex;
+    align-items: center;
+   
+}
+
+.input-search input {
+    padding: 10px 4px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid#000;
+    width: 90%;
+}
+.input-search input::placeholder {
+    text-align: center;
+    font-size: 20px;
+}
+.input-search i {
+    font-size: 30px;
+    color: #000;
+    font-weight: 300;
+}
+
+
+
+/* menu moble */
+
+.mobile-menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2000;
+    display: none;
+    /* display: block; */
+    
+}
+
+.overlay-mnu {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2001;
+}
+
+.mobi-menu {
+    position: absolute;
+    z-index: 2002;
+    background-color: var(--white-color);
+    width: 95%;
+    height: 100%;
+    padding: 10px;
+}
+
+.menu-header {
+    display: flex
+}
+.item-menu {
+    display: flex;
+    width: 100%;
+    /* margin-top: 10px; */
+}
+.menu-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item {
+    margin-left: 6px;
+}
+.menu-item a span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-color);
+    text-transform: uppercase;;
+    
+}
+
+.close-menu {
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.close-menu:hover {
+    color: var(--blue-color);
+    transform: rotate(150deg);
+    transition: linear .5s;
+}
+
+.body-menu-item {
+    margin-top: 30px;
+}
+
+.body-item {
+    margin-top: 8px;
+}
+
+.body-list li a span {
+    font-size: 20px;
+    color: var(--black-color);
+    font-weight: 300;
+}
+.block-mobile {
+    display: block;
+}

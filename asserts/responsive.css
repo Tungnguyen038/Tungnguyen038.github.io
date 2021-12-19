@@ -1,0 +1,63 @@
+/* Mobile & tablet */
+@media (max-width: 1023px) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .hide-on-tablet {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 740px) {
+  :root {
+    --header-height: 54px;
+    --navbar-height: 0px;
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .header-logo {
+    justify-content: space-around;
+    width: 100%;
+  }
+  .search-mobile {
+    color: #fff;
+    margin-right: 10px;
+    display: block;
+  }
+
+  .menu-mobile a,
+  .search-mobile a {
+    font-size: 25px;
+    color: #fff;
+    padding: 5px;
+  }
+  .menu-mobile {
+    display: block;
+  }
+  .search-mobile a i {
+    font-weight: 700;
+    float: right;
+  }
+
+  .buy-now h2 {
+    display: block;
+    font-size: 10px;
+  }
+
+
+
+#slider2 {
+  display: none;
+}
+.slider > ul {
+  display: flex;
+}
+
+}

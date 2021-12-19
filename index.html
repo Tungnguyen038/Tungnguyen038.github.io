@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thời trang nam Nữ Rountine</title>
+    <link rel="stylesheet" href="./asserts/grid.css" />
+    <link rel="stylesheet" href="./asserts/base.css" />
+    <link rel="stylesheet" href="./asserts/indexTT.css" />
+    <link rel="stylesheet" href="./asserts/responsive.css" />
+    <link rel="stylesheet" href="./fonts/themify-icons/themify-icons.css" />
+    <link rel="icon" type="image/x-icon" href="https://routine.vn/media/favicon/default/output-onlinejpgtools.png">
+    <link
+      rel="stylesheet"
+      href="./fonts/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rochester&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <!--  chatbot -->
+    <link rel="stylesheet" href="./asserts/jquery.convform.css" />
+    <script type="text/javascript" src="./jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="./jquery.convform.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+  </head>
+
+  <body>
+    <!-- chat bot -->
+    <div class="chat__icon">
+      <i class="fa fa-comments" aria-hidden="true"></i>
+    </div>
+
+    <div class="chat__box">
+      <div class="conv-form-wrapper">
+        <form action="" method="GET" class="hidden">
+          <select
+            name="category"
+            data-conv-question="Xin chào ! tôi có thể giúp gì cho bạn"
+          >
+          
+            <option value="webDevelopment">THời trang Nam</option>
+            <option value="digitalMarketing">Thời trang nữ</option>
+          </select>
+
+          <div data-conv-fork="category">
+            <div data-conv-case="webDevelopment">
+              <!-- <input type="text" name="domain_name" data-conv-question="Bạn muons mua áo khoác, quần hay sơ mi"> -->
+              <select
+                name="categoryChung"
+                data-conv-question="Bạn muốn mua món gì"
+              >
+                <option value="listAoNam">Áo sơ mi cao cấp</option>
+                <option value="listQuanNam">Quần tây âu cao cấp</option>
+              </select>
+            </div>
+            <div data-conv-case="digitalMarketing">
+              <!-- <input type="text" name="company_name" data-conv-question="Please, tell me your company name"> -->
+              <select
+                name="categoryChung"
+                data-conv-question="Bạn muốn mua món gì"
+              >
+                <option value="listAoNu">Áo nữ</option>
+                <option value="listQuanNu">chân váy</option>
+              </select>
+            </div>
+          </div>
+
+          <div data-conv-fork="categoryChung">
+            <div data-conv-case="listAoNam">
+              <!-- <input type="text" name="domain_name" data-conv-question="Bạn muons mua áo khoác, quần hay sơ mi"> -->
+              <select
+                name="categoryLoaiAo"
+                data-conv-question="bạn muốn mua loại áo gì"
+              >
+                <option value="listAo1">Áo sơ mi tay dài</option>
+                <option value="listQuan1">Áo sơ mi tay ngắn</option>
+              </select>
+            </div>
+
+            <div data-conv-case="listAoNu">
+              <!-- <input type="text" name="domain_name" data-conv-question="Bạn muons mua áo khoác, quần hay sơ mi"> -->
+              <select
+                name="categoryLoaiAo"
+                data-conv-question="bạn muốn mua loại áo gì"
+              >
+                <option value="listAo1">áo croptop</option>
+                <option value="listQuan1">Áo thun form rộng</option>
+              </select>
+            </div>
+
+            <div data-conv-case="listQuanNam">
+              <!-- <input type="text" name="company_name" data-conv-question="Please, tell me your company name"> -->
+              <select
+                name="categoryLoaiQuan"
+                data-conv-question="bạn muốn Quần nào"
+              >
+                <option value="listAo1">quần tây dài</option>
+                <option value="listQuan1">Quần jean</option>
+              </select>
+            </div>
+
+            <div data-conv-case="listQuanNu">
+              <!-- <input type="text" name="company_name" data-conv-question="Please, tell me your company name"> -->
+              <select
+                name="categoryLoaiQuan"
+                data-conv-question="bạn muốn Quần nào"
+              >
+                <option value="listAo1">chân váy ngắn xinh</option>
+                <option value="listQuan1">Quần jean cao câp</option>
+              </select>
+            </div>
+          </div>
+
+          <input
+            type="text"
+            name="name"
+            data-conv-question="Bạn cho tôi biết cân nặng của bạn"
+          />
+          <input
+            type="text"
+            name="name"
+            data-conv-question="Bạn cho tôi biết chiều cao của bạn"
+          />
+          <!-- <input data-conv-question="Type in your e-mail" data-pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?"> -->
+          <select
+            data-conv-question="xin vui lòng chọn bên dưới để tới giỏ hàng của bạn"
+          >
+            <option id="gioHang" value="conform">
+              <a href="https://www.google.com.vn/">tới giỏ hàng</a>
+            </option>
+            <option value="conform">google.com</option>
+            <!-- <option value="digitalMarketing">Thời Trang só 1 Việt Nam</option> -->
+          </select>
+
+          <input
+            type="text"
+            name="name"
+            data-conv-question="Cảm ơn bạn đã trò chuyện với chúng tôi"
+          />
+          <a href="./category.html"></a>
+        </form>
+      </div>
+    </div>
+    <!-- ChatBot end -->
+
+    <div class="main">
+      <!-- Thẻ bao bọc trang -->
+      <div class="page-wrapper">
+        <header class="header">
+          <div class="row row-height">
+            <div class="header-header">
+              <div class="header-left hide-on-mobile">
+                <ul class="header-left_left">
+                  <li class="header-left_left-item header-left_left-item-has">
+                    <a href="./category/category.html" class="">
+                      <span class="header-left_title border-bottom">NAM</span>
+                    </a>
+                    <div class="flex-ul flex-ul-nam">
+                      <ul class="header-left_male-parent">
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> Bộ Sưu Tập </span>
+                          <ul class="header-chil">
+                            <li class="header-chil_item">
+                              <span class="border-bottom">
+                                SS21-TROPICAL SOUND
+                              </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> Áo Nam </span>
+                          <ul class="header-chil">
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> + XEM TẤT CẢ </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> Áo POLO NAM </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> ÁO THUN NAM </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> Quần Nam </span>
+                          <ul class="header-chil">
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> + XEM TẤT CẢ </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> QUẦN JEAN NAM </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> QUẦN KAKI NAM </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> QUẦN VẢI NAM </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> QUẦN LOÁT NAM </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom">
+                                QUẦN SHORT NAM
+                              </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> Giày dép Nam </span>
+                        </li>
+                        <li class="header-left_male-item">
+                          <span class="border-bottom">
+                            Phụ Kiện Thời Trang Nam
+                          </span>
+                          <ul class="header-chil">
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> + XEM TẤT CẢ </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> THẮT LƯNG NAM </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> VỚ NAM </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> DÉP NAM </span>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li
+                    class="header-left_left-item header-left_left-item-has-Nu"
+                  >
+                    <span class="header-left_title border-bottom">NỮ</span>
+                    <div class="flex-ul flex-ul-nu">
+                      <ul class="header-left_male-parent">
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> ÁO NỮ </span>
+                          <ul class="header-chil">
+                            <li class="header-chil_item">
+                              <span class="border-bottom">
+                                SS21-TROPICAL SOUND
+                              </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> QUẦN NỮ </span>
+                          <ul class="header-chil">
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> + XEM TẤT CẢ </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> Áo POLO NAM </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> ÁO THUN NAM </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> ĐẦM NỮ </span>
+                          <ul class="header-chil">
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> + XEM TẤT CẢ </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> QUẦN JEAN NAM </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> QUẦN KAKI NAM </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> QUẦN VẢI NAM </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> QUẦN LOÁT NAM </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom">
+                                QUẦN SHORT NAM
+                              </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> CHÂN VÁY </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-left_left-item header-left_left-item-sale">
+                    <span
+                      class="
+                        header-left_title
+                        border-bottom
+                        header-left_title-active
+                      "
+                      >SALE ONLINE</span
+                    >
+                    <div class="flex-ul flex-ul-sale">
+                      <ul class="header-left_male-parent">
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> NAM </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-left_left-item header-left_left-item-new">
+                    <span class="header-left_title border-bottom"
+                      >NEW ARRIVALs</span
+                    >
+                    <div class="flex-ul flex-ul-new">
+                      <ul class="header-left_male-parent">
+                        <li
+                          class="
+                            header-left_male-item header-left_male-item-acti
+                          "
+                        >
+                          <span class="border-bottom"> NAM </span>
+                        </li>
+                        <li
+                          class="
+                            header-left_male-item header-left_male-item-acti
+                          "
+                        >
+                          <span class="border-bottom"> NỮ </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- logo mobile -->
+              <div class="header-logo">
+                <div class="menu-mobile">
+                      <i class="ti-menu"></i>
+                  </div>
+                <a href="" class="logo">
+                  <img
+                    src="https://routine.vn/media/logo/websites/1/ezgif-7-ee007e6332a0_2x.png"
+                    style="fill: #fff"
+                    class="logo-header_img"
+                    alt=""
+                  />
+                </a>
+                <div class="search-mobile">
+                    <i class="ti-search"></i>
+                </div>
+               
+              </div>
+              <!--  -->
+              <div class="header-right hide-on-mobile">
+                <div class="header-right_search">
+                  <input
+                    type="text"
+                    placeholder="Tìm kiếm"
+                    class="parent-search_input"
+                  />
+                </div>
+
+                <ul class="header-right_right">
+                  <li class="header-right-right-item">
+                    <a href="./login.html" class="header-login">
+                      <span class="header-right_title border-bottom"
+                        >Đăng Nhập</span
+                      >
+                    </a>
+                  </li>
+                  <li
+                    class="header-right-right-item header-right-right-item-has"
+                  >
+                    <span class="header-right_title border-bottom"
+                      >Trợ Giúp</span
+                    >
+                    <div class="flex-ul flex-ul-help">
+                      <ul
+                        class="
+                          header-left_male-parent header-left_male-parent-help
+                        "
+                      >
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> CÔNG TY </span>
+                          <ul class="header-chil">
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> VỀ CHÚNG TÔI </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom">
+                                CHĂM SÓC KHÁCH HÀNG
+                              </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> TUYỂN DỤNG </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> TIN TỨC </span>
+                        </li>
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> CHÍNH SÁCH </span>
+                          <ul class="header-chil">
+                            <li class="header-chil_item">
+                              <span class="border-bottom">
+                                KHÁCH HÀNG THÂN THIẾT
+                              </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom">
+                                ĐỔI & TRẢ HÀNG
+                              </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> BẢO HÀNH </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom"> BẢO MẬT </span>
+                            </li>
+                            <li class="header-chil_item">
+                              <span class="border-bottom">
+                                CÁC CÂU HỎI THƯỜNG GẶP
+                              </span>
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> HỆ THỐNG CỬA HÀNG </span>
+                        </li>
+                        <li class="header-left_male-item">
+                          <span class="border-bottom"> LIÊN HỆ </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="header-right-right-item gio-hang header-right-right__cart">
+                      <span class="header-right_title border-bottom"
+                        >Giỏ Hàng</span
+                      >
+                      <span class="header__cart-quantity">(9)</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- phan gio hang -->
+          <div class="block__cart animate__animated animate__bounceInRight">
+            <div class=" block block-minicart">
+                <div class="header__cart-list">
+                    <div class="minicart-top">
+                        <a href="" class="minicart-link">
+                            <span class="minicart-gh">Giỏ hàng</span>
+                            <p class="minicart-sl">
+                                <span class="minicart-quantity">9</span>
+                                <span class="minicart-sp">Sản phẩm</span>
+    
+                            </p>
+                        </a>
+                        <span class="minicart-close">Đóng</span>
+                    </div>
+    
+                    <!-- css class này thành block để hiển thị giỏ hàng rỗng -->
+                    <!-- <div class="header__cart-empty">
+                        <div class="header__cart-img">
+                            <img src="./" alt="" class="cart__img">
+                        </div>
+                        <h4 class="empty-cart">
+                            <span>Giỏ hàng trống rỗng</span>
+                        </h4>
+                        <span class="empty-cart2">
+                            <span>Bạn không có sản phẩm nào trong giỏ hàng</span>
+                        </span>
+                    </div> -->
+                    <!-- end gio hang trong rong -->
+                    <!-- co do trong gio hang -->
+                    <div class="list-cart">
+                      <ul class="list-cart-list">
+                        <li class="list-cart-item">
+                          <a href="#" class="list-cart-link">
+                            <div class="list-cart-img">
+                              <img src="https://routine.vn/media/catalog/product/cache/59db0cfd5192c9a4d6ff231b8171cf2c/z/2/z2990008326075_2400052467f313240a78f37a3c1f3457_2.jpg" alt="có ảnh nha">
+                            </div>
+                            <div class="list-cart-right">
+                              <div class="heading-cart">
+                                <h3> ÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍ</h3>
+                                <span class="xxx">&times;</span>
+                              </div>
+                              <span class="span1">S/ BRIGHT WHITE</span>
+                              <span class="span2">380.000 đ</span>
+                              <div class="quantity-cart">
+                                <span>Tới sản phẩm</span>
+                              </div>
+
+                            </div>
+                          </a>
+                        </li>
+                        <li class="list-cart-item">
+                          <a href="#" class="list-cart-link">
+                            <div class="list-cart-img">
+                              <img src="./img1/HOME5.jpg" alt="có ảnh nha">
+                            </div>
+                            <div class="list-cart-right">
+                              <div class="heading-cart">
+                                <h3> ÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍ</h3>
+                                <span class="xxx">&times;</span>
+                              </div>
+                              <span class="span1">S/ BRIGHT WHITE</span>
+                              <span class="span2">380.000 đ</span>
+                              <div class="quantity-cart">
+                                <span>Tới sản phẩm</span>
+                              </div>
+
+                            </div>
+                          </a>
+                        </li>
+                        <li class="list-cart-item">
+                          <a href="#" class="list-cart-link">
+                            <div class="list-cart-img">
+                              <img src="https://routine.vn/media/catalog/product/cache/59db0cfd5192c9a4d6ff231b8171cf2c/z/2/z2990008326075_2400052467f313240a78f37a3c1f3457_2.jpg" alt="có ảnh nha">
+                            </div>
+                            <div class="list-cart-right">
+                              <div class="heading-cart">
+                                <h3> ÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍ</h3>
+                                <span class="xxx">&times;</span>
+                              </div>
+                              <span class="span1">S/ BRIGHT WHITE</span>
+                              <span class="span2">380.000 đ</span>
+                              <div class="quantity-cart">
+                                <span>Tới sản phẩm</span>
+                              </div>
+
+                            </div>
+                          </a>
+                        </li>
+                        <li class="list-cart-item">
+                          <a href="#" class="list-cart-link">
+                            <div class="list-cart-img">
+                              <img src="https://routine.vn/media/catalog/product/cache/59db0cfd5192c9a4d6ff231b8171cf2c/z/2/z2990008326075_2400052467f313240a78f37a3c1f3457_2.jpg" alt="có ảnh nha">
+                            </div>
+                            <div class="list-cart-right">
+                              <div class="heading-cart">
+                                <h3> ÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍ</h3>
+                                <span class="xxx">&times;</span>
+                              </div>
+                              <span class="span1">S/ BRIGHT WHITE</span>
+                              <span class="span2">380.000 đ</span>
+                              <div class="quantity-cart">
+                                <span>Tới sản phẩm</span>
+                              </div>
+
+                            </div>
+                          </a>
+                        </li>
+                        <li class="list-cart-item">
+                          <a href="#" class="list-cart-link">
+                            <div class="list-cart-img">
+                              <img src="https://routine.vn/media/catalog/product/cache/59db0cfd5192c9a4d6ff231b8171cf2c/z/2/z2990008326075_2400052467f313240a78f37a3c1f3457_2.jpg" alt="có ảnh nha">
+                            </div>
+                            <div class="list-cart-right">
+                              <div class="heading-cart">
+                                <h3> ÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍ</h3>
+                                <span class="xxx">&times;</span>
+                              </div>
+                              <span class="span1">S/ BRIGHT WHITE</span>
+                              <span class="span2">380.000 đ</span>
+                              <div class="quantity-cart">
+                                <span>Tới sản phẩm</span>
+                              </div>
+
+                            </div>
+                          </a>
+                        </li>
+                        <li class="list-cart-item">
+                          <a href="#" class="list-cart-link">
+                            <div class="list-cart-img">
+                              <img src="https://routine.vn/media/catalog/product/cache/59db0cfd5192c9a4d6ff231b8171cf2c/z/2/z2990008326075_2400052467f313240a78f37a3c1f3457_2.jpg" alt="có ảnh nha">
+                            </div>
+                            <div class="list-cart-right">
+                              <div class="heading-cart">
+                                <h3> ÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍ</h3>
+                                <span class="xxx">&times;</span>
+                              </div>
+                              <span class="span1">S/ BRIGHT WHITE</span>
+                              <span class="span2">380.000 đ</span>
+                              <div class="quantity-cart">
+                                <span>Tới sản phẩm</span>
+                              </div>
+
+                            </div>
+                          </a>
+                        </li>
+                        <li class="list-cart-item">
+                          <a href="#" class="list-cart-link">
+                            <div class="list-cart-img">
+                              <img src="https://routine.vn/media/catalog/product/cache/59db0cfd5192c9a4d6ff231b8171cf2c/z/2/z2990008326075_2400052467f313240a78f37a3c1f3457_2.jpg" alt="có ảnh nha">
+                            </div>
+                            <div class="list-cart-right">
+                              <div class="heading-cart">
+                                <h3> ÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍ</h3>
+                                <span class="xxx">&times;</span>
+                              </div>
+                              <span class="span1">S/ BRIGHT WHITE</span>
+                              <span class="span2">380.000 đ</span>
+                              <div class="quantity-cart">
+                                <span>Tới sản phẩm</span>
+                              </div>
+
+                            </div>
+                          </a>
+                        </li>
+                        <li class="list-cart-item">
+                          <a href="#" class="list-cart-link">
+                            <div class="list-cart-img">
+                              <img src="https://routine.vn/media/catalog/product/cache/59db0cfd5192c9a4d6ff231b8171cf2c/z/2/z2990008326075_2400052467f313240a78f37a3c1f3457_2.jpg" alt="có ảnh nha">
+                            </div>
+                            <div class="list-cart-right">
+                              <div class="heading-cart">
+                                <h3> ÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍ</h3>
+                                <span class="xxx">&times;</span>
+                              </div>
+                              <span class="span1">S/ BRIGHT WHITE</span>
+                              <span class="span2">380.000 đ</span>
+                              <div class="quantity-cart">
+                                <span>Tới sản phẩm</span>
+                              </div>
+
+                            </div>
+                          </a>
+                        </li>
+                        <li class="list-cart-item">
+                          <a href="#" class="list-cart-link">
+                            <div class="list-cart-img">
+                              <img src="https://routine.vn/media/catalog/product/cache/59db0cfd5192c9a4d6ff231b8171cf2c/z/2/z2990008326075_2400052467f313240a78f37a3c1f3457_2.jpg" alt="có ảnh nha">
+                            </div>
+                            <div class="list-cart-right">
+                              <div class="heading-cart">
+                                <h3> ÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍÁO POLO, NHÃN TRANG TRÍ</h3>
+                                <span class="xxx">&times;</span>
+                              </div>
+                              <span class="span1">S/ BRIGHT WHITE</span>
+                              <span class="span2">380.000 đ</span>
+                              <div class="quantity-cart">
+                                <span>Tới sản phẩm</span>
+                              </div>
+
+                            </div>
+                          </a>
+                        </li>
+                     
+                      </ul>
+
+                    </div>
+                </div>
+    
+            </div>
+    
+        </div>
+        <script>
+            const cartBtn = document.querySelector('.header-right-right-item.gio-hang')
+            const modalCart = document.querySelector('.block__cart')
+            const modalCartList = document.querySelector('.header__cart-list')
+            const closeCartList = document.querySelector('.minicart-top .minicart-close')
+            // console.log(closeCartList)
+    
+            function showCartBlock() {
+                modalCart.classList.add('open__cart-block')
+            }
+            function hideCartBlock() {
+                modalCart.classList.remove('open__cart-block')
+            }
+            cartBtn.addEventListener('click', showCartBlock);
+            modalCart.addEventListener('click', hideCartBlock);
+            closeCartList.addEventListener('click',hideCartBlock)
+            modalCartList.addEventListener('click', function(e) {
+                e.stopPropagation();
+            })
+    
+        </script>
+         
+        </header>
+
+        <div class="container">
+        <!-- Slider 1 -->
+<div class="slider" id="slider1">
+  <!-- Slides -->
+  <div style="background-image:url('./img1/HOME5.jpg')"></div>
+  <div style="background-image:url('./img1/HOME2.jpg')"></div>
+  <div style="background-image:url('./img1/HOME4.jpg')"></div>
+  <div style="background-image:url('./img1/HOME3.jpg')"></div>
+  <div style="background-image:url('./img1/HOME1.jpg')"></div>
+  <!-- The Arrows -->
+  <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+          <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+      </svg></i>
+  <i class="right" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+          <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path>
+      </svg></i>
+  <!-- Title Bar -->
+  <span class="titleBar">
+      <h1>Chần chờ gì nửa mà không mua sắm cho mình nào...</h1>
+  </span>
+</div>
+
+<br>
+
+<div class="row2Wrap">
+
+  <div class="slider" id="slider2">
+
+      <div style="background-image:url(https://img.mwc.com.vn/giay-thoi-trang?&w=450&h=450&FileInput=//Upload/2021/11/z2911961731128-0b8291135444a750f681439bd62f8bbe.jpg)"></div>
+      <div style="background-image:url(https://img.mwc.com.vn/giay-thoi-trang?&w=450&h=450&FileInput=//Upload/2021/11/z2924639690924-12ff846380e2fe6ba6741a2699af93bb.jpg)"></div>
+      <div style="background-image:url(https://img.mwc.com.vn/giay-thoi-trang?&w=450&h=450&FileInput=//Upload/2021/11/z2931363901939-f48d904a7298ae77d5b11cdbc6435cbb.jpg)"></div>
+      <div style="background-image:url(https://img.mwc.com.vn/giay-thoi-trang?&w=450&h=450&FileInput=//Upload/2021/05/z2468550823557-bace1502ce584436465650fea14918f4.jpg)"></div>
+
+      <i class="left" class="arrows" style="z-index:2; position:absolute;">
+          <svg viewBox="0 0 100 100">
+              <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+          </svg>
+      </i>
+      <i class="right" class="arrows" style="z-index:2; position:absolute;">
+          <svg viewBox="0 0 100 100">
+              <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path>
+          </svg>
+      </i>
+      <!-- Title Bar -->
+      <!--     
+      <span class="titleBar"> 
+          <h1>I am like a leaf in the wind.</h1> 
+          <p>Watch me soar!</p>
+      </span> 
+      -->
+  </div>
+
+  <!-- <h3>Individual slide text</h3> -->
+
+  <!-- Slider 1 -->
+  <div class="slider" id="slider3">
+      <div style="background-image:url(https://pubcdn.ivymoda.com/files/news/2021/11/19/6ca62ae8721b5b437e35246c49e5b832.jpg)">
+          <span>
+              <h2>Tinh tế, độc quyền...</h2>
+          </span>
+      </div>
+      <div style="background-image:url(https://pubcdn.ivymoda.com/files/news/2021/11/17/33906a1852fe202404f5c0e04ec53420.jpg)">
+          <span>
+              <h2>Thời trang hấp dẫn...</h2>
+          </span>
+      </div>
+      <div style="background-image:url(https://pubcdn.ivymoda.com/files/news/2021/11/17/198f647809aed20c43d7ea314e56528a.jpg)">
+          <span>
+              <h2>Quyến rũ, sắc xảo...</h2>
+          </span>
+      </div>
+      <!-- The Arrows -->
+      <i class="left" class="arrows" style="z-index:2; position:absolute;"><svg viewBox="0 0 100 100">
+              <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z"></path>
+          </svg></i>
+      <i class="right" class="arrows" style="z-index:2; position:absolute;">
+          <svg viewBox="0 0 100 100">
+              <path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" transform="translate(100, 100) rotate(180) "></path>
+          </svg></i>
+      <!-- Title Bar -->
+      <!--     <span class="titleBar">
+      <h1>I am like a leaf in the wind.</h1> 
+      <p>Watch me soar!</p>
+  </span> -->
+            </div>
+
+          </div>
+                  
+        </div>
+
+        <footer class="footer">
+          <div class="row">
+            <div class="col l-6 m">
+              <div class="row">
+                <div class="footer-left col l-6">
+                  <h3>THAM GIA BẢNG TIN CỦA CHÚNG TÔI</h3>
+                  <div class="footer-left_left">
+                    <input
+                      type="email"
+                      placeholder="Nhập email của bạn"
+                      class="footer-left-input"
+                    />
+                    <i class="ti-email"></i>
+                  </div>
+                  <p class="footer-p">
+                    ROUTINE CO,. LTD | Mã Số Thuế: 0106486365 | Văn Phòng: Tầng
+                    10 Tòa Nhà IMC, 62 Trần Quang Khải, Phường Tân Định, Quận 1,
+                    Tp.HCM
+                  </p>
+                  <ul class="footer-list">
+                    <li class="footer-item">
+                      <a href="" class="footer-item-link">FACEBOOK</a>
+                    </li>
+                    <li class="footer-item">
+                      <a href="" class="footer-item-link">INSTAGRAM</a>
+                    </li>
+                  </ul>
+                  <p class="footer-left-p">
+                    <a href="">
+                      <img
+                        src="https://routine.vn/media/wysiwyg/dang-ky-website-thuong-mai-dien-tu-1024x388-1024x388.png"
+                        alt=""
+                      />
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-6">
+              <div class="row">
+                <div class="footer-right col l-4">
+                  <h4>CÔNG TY</h4>
+                  <ul class="footer-right-list">
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link"
+                        >Giới thiệu về ROUTINE</a
+                      >
+                    </li>
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link">Tuyển dụng</a>
+                    </li>
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link">Tin tức</a>
+                    </li>
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link"
+                        >Chăm sóc khách hàng</a
+                      >
+                    </li>
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link">Liên hệ</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-right col l-4">
+                  <h4>CHÍNH SÁCH KHÁCH HÀNG</h4>
+                  <ul class="footer-right-list">
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link"
+                        >Chính sách khách hàng thân thiết</a
+                      >
+                    </li>
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link"
+                        >Chính sách đổi và trả hàng</a
+                      >
+                    </li>
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link"
+                        >Chính sách bảo hành</a
+                      >
+                    </li>
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link"
+                        >Chính sách bảo mật</a
+                      >
+                    </li>
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link"
+                        >Câu hỏi thường gặp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-right col l-4">
+                  <h4>THÔNG TIN KHÁCH HÀNG</h4>
+                  <ul class="footer-right-list">
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link">- CỬA HÀNG THỨ 29</a>
+                    </li>
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link"
+                        >24/8 lê văn việt, quận 9 TPHCM</a
+                      >
+                    </li>
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link">- CỬA HÀNG THỨ 28</a>
+                    </li>
+                    <li class="footer-right-item">
+                      <a href="" class="footer-right-link"
+                        >28 võ văn ngân,TP Thủ Đức TPHCM</a
+                      >
+                    </li>
+                    <li class="footer-right-item footer-right-item-mg">
+                      <a
+                        href=""
+                        class="footer-right-link footer-right-link-active"
+                        >Xem tất cả các cửa hàng</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+<!-- phan tim kiem -->
+    <div class="mobile-layer animate__animated animate__backInUp">
+      <div class="modal-overlay"></div>
+        <div class="mobile-s">
+          <div class="close-search-vip">
+            <i class="ti-close close-search"></i>
+          </div>
+            <div class="input-search">
+                <input type="text" placeholder="Tìm kiếm">
+                <i class="ti-search"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+     
+    </script> -->
+
+    <!--  mobile menu -->
+    <div class="mobile-menu animate__animated animate__bounceInLeft">
+        <div class="overlay-mnu "></div>
+        <div class="mobi-menu">
+          <div class="menu-header">
+            <div class="item-menu">
+              <ul class="menu-list">
+                <li class="menu-item">
+                  <a href=""><span>Nam</span></a>
+                </li>
+                <li class="menu-item">
+                  <a href="./category/category.html"><span>Nữ</span></a>
+                </li>
+                <li class="menu-item">
+                  <a href="./category/category.html"><span>saleonline</span></a>
+                </li>
+                <li class="menu-item">
+                  <a href=""><span> new arrivals</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="close-menu">
+              <a href="">
+                <i class="ti-close"></i>
+
+              </a>
+            </div>
+          </div>
+
+          <div class="body-menu-item">
+            <ul class="body-list">
+              <li class="body-item"><a href=""><span>bộ sưu tập</span></a></li>
+              <li class="body-item"><a href=""><span>áo nam</span></a></li>
+              <li class="body-item"><a href=""><span>quần nam</span></a></li>
+              <li class="body-item"><a href=""><span>giày dép nam</span></a></li>
+              <li class="body-item"><a href=""><span>phụ kiện thời trang nam</span></a></li>
+              <li class="body-item"><a href=""><span>+ trợ giúp</span></a></li>
+            </ul>
+          </div>
+
+
+        </div>
+    </div>
+
+    <script>
+      // phan tim kiem
+       const mobileLayer= document.querySelector('.mobile-layer')
+      const searchMobile = document.querySelector('.search-mobile')
+      const closeSerch = document.querySelector('.close-search-vip')
+      const modalOverlay = document.querySelector('.modal-overlay')
+      function presentlyMobile() {
+        mobileLayer.classList.add('block-mobile')
+      }
+      function hideMobile () {
+        mobileLayer.classList.remove('block-mobile')
+      }
+      searchMobile.addEventListener('click', presentlyMobile )
+      closeSerch.addEventListener('click', hideMobile )
+      modalOverlay.addEventListener('click', hideMobile)
+
+      //phan menu
+
+      const mnMobile = document.querySelector('.menu-mobile')
+      const clMenuMB = document.querySelector('.close-menu')
+      const showMenu = document.querySelector('.mobile-menu')
+      const ovlMenu = document.querySelector('.overlay-mnu')
+
+      console.log(ovlMenu);
+
+      function showMenuMobile() {
+        showMenu.classList.add('block-mobile')
+        console.log(123);
+      }
+      function hideMenuMObile() {
+        showMenu.classList.remove('block-mobile')
+      }
+      mnMobile.addEventListener('click', showMenuMobile)
+      clMenuMB.addEventListener('click', hideMenuMObile)
+      ovlMenu.addEventListener('click', hideMenuMObile)
+
+    </script>
+  </body>
+</html>
